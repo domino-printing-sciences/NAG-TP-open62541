@@ -1,0 +1,10 @@
+libdir=C:/Program Files (x86)/open62541/lib
+sharedlibdir=${libdir}
+includedir=C:/Program Files (x86)/open62541/include
+
+Name: open62541
+Description: open62541 is an open source C (C99) implementation of OPC UA
+Version: 1.4.2
+Libs: -L${libdir} -lopen62541 
+Requires.private: ws2_32, iphlpapi, optimized, C:/Program Files/OpenSSL-Win64/lib/VC/x64/MD/libssl.lib, debug, C:/Program Files/OpenSSL-Win64/lib/VC/x64/MDd/libssl.lib, optimized, C:/Program Files/OpenSSL-Win64/lib/VC/x64/MD/libcrypto.lib, debug, C:/Program Files/OpenSSL-Win64/lib/VC/x64/MDd/libcrypto.lib
+Cflags: -I${includedir} 
